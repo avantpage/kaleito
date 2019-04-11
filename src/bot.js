@@ -1,6 +1,7 @@
 'use strict';
+const axios = require('axios')
 
-module.exports.setup = function(app) {
+module.exports.setup = function (app) {
     var builder = require('botbuilder');
     var teams = require('botbuilder-teams');
     var config = require('config');
@@ -19,14 +20,28 @@ module.exports.setup = function(app) {
         appId: config.get("bot.appId"),
         appPassword: config.get("bot.appPassword")
     });
-    
+
     var inMemoryBotStorage = new builder.MemoryBotStorage();
-    
+
     // Define a simple bot with the above connector that echoes what it received
-    var bot = new builder.UniversalBot(connector, function(session) {
+    var bot = new builder.UniversalBot(connector, function (session) {
         // Message might contain @mentions which we would like to strip off in the response
         var text = teams.TeamsMessage.getTextWithoutMentions(session.message);
-        session.send('You said: %s', text);
+
+        if (text.startsWith("xtrfarchive ")) {
+            var id = text.substr(12);
+            axios.defaults.baseURL = config.get("xpiayoc.url");
+            axios.defaults.headers.common["Authorization"] = "Bearer " + config.get("xpiayoc.token");
+            axios.post("/archive", {
+                human_id: id
+            }).then((response) => {
+                console.log(response.data.attributes.url);
+                session.send('Download your project [here](%s)', response.data.attributes.url);
+            });
+        } else {
+            session.send('I couldnt understand that, remember to write **xtrfarchive projectID**');
+        }
+
     }).set('storage', inMemoryBotStorage);
 
     // Setup an endpoint on the router for the bot to listen.
