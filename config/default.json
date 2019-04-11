@@ -1,11 +1,11 @@
 {
     "bot": {
-        "appId": "8734d1ca-2557-4d5c-ac99-e70d8f742f27",
-        "appPassword": "hetueHMQH32^#}}mbPBS869"
+        "appId": "",
+        "appPassword": ""
     },
     "storage": "memory",
     "xpiayoc": {
-        "url": "http://localhost:8000/api/mteams",
-        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjE0M2U1YmYyMTAwOWI4ZDQwMTFiMGI5YTJhMmMzZWY4NmQyMTFjMzZhYjM3NmYyMmY3MjY3MzAxYThjMjNkZmI1YjQ4ZmMyZTk5ZmI2NDQ0In0.eyJhdWQiOiIxIiwianRpIjoiMTQzZTViZjIxMDA5YjhkNDAxMWIwYjlhMmEyYzNlZjg2ZDIxMWMzNmFiMzc2ZjIyZjcyNjczMDFhOGMyM2RmYjViNDhmYzJlOTlmYjY0NDQiLCJpYXQiOjE1NTQ5ODQ4MTEsIm5iZiI6MTU1NDk4NDgxMSwiZXhwIjoxNTg2NjA3MjExLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.YUmztSktkTote-PY4jV_tSGaptCXc8iytZgb3_YF8QcWM6rO-wC_S4S-KxCd91SIDG2caIkF5pD-XsfmRQSMqPAIO9A1sEfBqej6fAu7deLsTFc8_dFq49vqKFnUl5-4Pgleta9X6BOq5Df9caPM9A7la1dkw80pcZhuGkJzub0wDFK40B45I_a5uI7WO_pg_uLfx4alGeW8rElS8Eo_-DUTIgZIARg9DjxADa1iyqqG0Z8pWHB7yMjGZvs8MlMHu7sYo46poSjVIFTVgOLo3sPHqEIjzb2hHmfyiFItljUjCK5cTUFUSTpH7l6elJVCFHSwNVYr3vRT4mtCpTl8q_CelxFWu7f1FIABqBn9Zy1Rq70GktuQoTx1anmkqPEiz5HHiVYqP1_YKeC53uvxWrAZXAWq8n3ZQKs-66B-TQAfdQGrjDgb3cL2PyutSF4SZ-wQTPhXTeeLkyrT0BmnrGbga8V-FkbNFUr2iUE_M_5Abh5hj7utFuG9tlJD-C8c18Y0lWkGq-T9jT-xBWq8WYjuTa2LJHWrVckIXuv_Y5FC7E3c_sHm_IXDV4n6eUTVZZmauoO4YYKZJcQUFQ5XnjT53Gd0-D7KBL42jjebAFFoF3T9lfXCBfEoUOvCPMUHKQrR1BpPyOlh8XmlivBQJfVz34PnU8CcgaDZF0lAY4E"
+        "url": "",
+        "token": ""
     }
 }
