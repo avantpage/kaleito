@@ -35,8 +35,8 @@ module.exports.setup = function (app) {
             axios.post("/archive", {
                 human_id: id
             }).then((response) => {
-                console.log(response.data.attributes.url);
-                session.send('Download your project [here](%s)', response.data.attributes.url);
+                console.log(response.data.attributes.link);
+                session.send('Download your project [here](%s)', response.data.attributes.link);
             });
         } else {
             session.send('I couldnt understand that, remember to write **xtrfarchive projectID**');
